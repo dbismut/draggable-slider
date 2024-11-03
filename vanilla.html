@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Vanilla</title>
+  </head>
+  <body>
+    <div style="margin-top: 20px"><a href="/">Back</a></div>
+    <h1>Carousel in Vanilla</h1>
+    <main style="--scrollSnapType: none; --scrollSnapAlign: none">
+      <nav>
+        Scroll Snap:
+        <select>
+          <option value="none">No Snap</option>
+          <option value="start">Start</option>
+          <option value="center">Center</option>
+          <option value="end">End</option>
+        </select>
+        <button>Prev</button>
+        <input type="text" value="1" />
+        <button>Next</button>
+      </nav>
+      <ul class="scroller"></ul>
+    </main>
+    <script type="module" src="/src/vanilla/main.ts"></script>
+  </body>
+</html>
