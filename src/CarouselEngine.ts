@@ -162,6 +162,7 @@ export class CarouselEngine extends Emitter {
   };
 
   #onWheel = () => {
+    this.#resetSnapStyle();
     this.#disableUpdate = false;
     clearTimeout(this.#wheelTimeout);
     this.#wheelTimeout = setTimeout(this.#resetSnapStyle, 50);
